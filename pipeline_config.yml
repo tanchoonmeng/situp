@@ -1,0 +1,13 @@
+nodes:
+- input.visual:
+    # source: situp.mp4
+    source: https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/msqd2XJ/fit-muscular-young-man-doing-abdominal-crunches-to-tone-and-strengthen-his-abs-and-muscles-in-a-darkened-gym-in-a-health-and-fitness-concept-close-up-low-angle_hplpi1xcze__5aaf993b22e011ef118e5efde3408570__P360.mp4
+- model.yolo
+- model.posenet
+- dabble.fps
+- custom_nodes.dabble.situp
+# - custom_nodes.dabble.debug
+- draw.poses
+- draw.legend:
+    show: ["fps"]
+- output.screen
